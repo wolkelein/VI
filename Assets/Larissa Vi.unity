@@ -12513,7 +12513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15984fa66a17ff48adaadebf9bd0d3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cratePrefab: {fileID: 100000, guid: 578a898e1b62d684b87ed6538a33fcb0, type: 3}
+  cratePrefab: {fileID: 186326, guid: cece44f05abb82842b48119cec495e0f, type: 3}
   guiWindowRect:
     serializedVersion: 2
     x: 10
