@@ -86,6 +86,7 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 				waveNow = true;
 				walkSpeed = 0.0f;
 				walkDirection = 0f;
+				FindObjectOfType<ChangeAvatar>().PerformChange(this);
 				Debug.Log("Switch worked");
 				break;
 
