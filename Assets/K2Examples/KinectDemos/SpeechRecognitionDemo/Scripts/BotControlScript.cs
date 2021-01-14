@@ -83,7 +83,7 @@ public class BotControlScript : MonoBehaviour, SpeechRecognitionInterface
 				break;
 
 			case "HELLO":
-				waveNow = true;
+				//waveNow = true;
 				walkSpeed = 0.0f;
 				walkDirection = 0f;
 				FindObjectOfType<ChangeAvatar>().PerformChange(this);
