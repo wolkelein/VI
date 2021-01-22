@@ -7,19 +7,23 @@ public class ChangeAvatar : MonoBehaviour
     Ray ray;
     RaycastHit hit;
 
-
-    void Start()
-    {
-        
-    }
-
+    /*
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //PerformChange();
+            Ray ray = new Ray(transform.position, transform.forward);
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.tag == "Avatar")
+                {
+                    if (hit.collider.GetComponent<BotControlScript>())
+                        PerformChange(hit.collider.GetComponent<BotControlScript>());
+                }
+            }
         }
     }
+    */
 
     public void PerformChange(BotControlScript botControlScript)
     {
