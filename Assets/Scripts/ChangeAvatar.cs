@@ -7,6 +7,13 @@ public class ChangeAvatar : MonoBehaviour
     Ray ray;
     RaycastHit hit;
 
+    private KinectManager _kinectManager;
+
+    private void Start()
+    {
+        _kinectManager = FindObjectOfType<KinectManager>();
+    }
+
     /*
     void Update()
     {
@@ -17,8 +24,8 @@ public class ChangeAvatar : MonoBehaviour
             {
                 if (hit.collider.tag == "Avatar")
                 {
-                    if (hit.collider.GetComponent<BotControlScript>())
-                        PerformChange(hit.collider.GetComponent<BotControlScript>());
+                    if (GetComponentInParent<BotControlScript>())
+                        PerformChange(GetComponentInParent<BotControlScript>());
                 }
             }
         }
@@ -34,6 +41,10 @@ public class ChangeAvatar : MonoBehaviour
             Debug.Log(hit.collider.name);
             if (hit.collider.tag == "Avatar")
             {
+                GetComponentInParent<Animator>().enabled = true;
+
+                GetComponentInParent<AvatarController>().externalRootMotion = true;
+
                 Transform hitTransform = hit.transform.Find("CameraPosition").transform;
                 transform.parent = hitTransform;
                 transform.position = hitTransform.position;
@@ -44,6 +55,15 @@ public class ChangeAvatar : MonoBehaviour
 
                 if (hit.collider.GetComponent<BotControlScript>())
                     hit.collider.GetComponent<BotControlScript>().enabled = true;
+
+                GetComponentInParent<Animator>().enabled = false;
+
+                AvatarController avatarController = GetComponentInParent<AvatarController>();
+
+                avatarController.externalRootMotion = false;
+
+                _kinectManager.avatarControllers.Clear();
+                _kinectManager.avatarControllers.Add(avatarController);
             }
         }
     }
