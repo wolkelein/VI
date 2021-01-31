@@ -38,7 +38,7 @@ ModelImporter:
       name: humanoid idle_MIXAMO_JZP_segment|humanoid idle_MIXAMO_JZP_segment
       takeName: humanoid idle_MIXAMO_JZP_segment|humanoid idle_MIXAMO_JZP_segment
       internalID: 0
-      firstFrame: 0
+      firstFrame: 233
       lastFrame: 755
       wrapMode: 0
       orientationOffsetY: 0
