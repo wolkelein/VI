@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/menu/Menu.unity
+    guid: c7800bc1397918541bdb545d74dfb7a1
+  - enabled: 1
+    path: Assets/menu/Larissa Vi.unity
+    guid: 6b96288181f2f8848a546d88b98bcd9e
   m_configObjects: {}
