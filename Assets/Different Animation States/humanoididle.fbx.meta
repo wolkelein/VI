@@ -38,8 +38,8 @@ ModelImporter:
       name: idle
       takeName: humanoid idle_MIXAMO_JZP_segment|humanoid idle_MIXAMO_JZP_segment
       internalID: 0
-      firstFrame: 0
-      lastFrame: 611
+      firstFrame: 21
+      lastFrame: 264
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -47,7 +47,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
