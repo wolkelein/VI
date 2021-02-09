@@ -2348,7 +2348,7 @@ MonoBehaviour:
   externalHeadRotation: 0
   externalHandRotations: 0
   fingerOrientations: 1
-  moveRate: 1
+  moveRate: 2
   smoothFactor: 10
   offsetNode: {fileID: 0}
   posRelativeToCamera: {fileID: 0}
@@ -13462,7 +13462,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b30492e10504c8c43b476dcc164b7c3c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 27cb89661cea43149829fc7d624f3842, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -23226,7 +23226,7 @@ MonoBehaviour:
   - {fileID: 1891135004}
   - {fileID: 1826827514}
   _randomIntervalMin: 5
-  _randomIntervalMax: 20
+  _randomIntervalMax: 120
 --- !u!4 &1575845469
 Transform:
   m_ObjectHideFlags: 0
@@ -24908,8 +24908,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697077758}
-  m_LocalRotation: {x: -0.08084475, y: 0.6989242, z: 0.08002484, w: 0.7060914}
-  m_LocalPosition: {x: -10.960377, y: -4.198972, z: 5.896582}
+  m_LocalRotation: {x: 0.087172285, y: 0.89959055, z: 0.21045254, w: -0.37262255}
+  m_LocalPosition: {x: 21.414783, y: -14.850346, z: 21.414783}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
